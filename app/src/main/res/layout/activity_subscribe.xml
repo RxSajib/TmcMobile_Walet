@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".SubscribeActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/SubscribeToolbarID"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:text="Subsribe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/SubscribeToolbarID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:elevation="1dp"
+            android:layout_below="@+id/CashToolbarID"
+            android:layout_margin="12dp"
+            android:background="@drawable/cash_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/earninfo_design"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:elevation="1dp"
+                android:layout_height="100dp">
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/ones"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="14sp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textColor="@android:color/white"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="Click on the subsribe button and get 5 coin just one click so easy and simple"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </TextView>
+
+
+
+                    </RelativeLayout>
+
+
+
+                </ScrollView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sss"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageID"
+                    android:src="@drawable/money"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp">
+                </ImageView>
+
+                <RelativeLayout
+                    android:id="@+id/ss"
+                    android:layout_below="@+id/imageID"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/LointextID"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:textSize="25dp"
+                        android:text="You Get"
+                        android:textColor="#686868"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+
+                    <ImageView
+                        android:layout_toRightOf="@+id/LointextID"
+                        android:id="@+id/coin"
+                        android:src="@drawable/coincolour"
+                        android:layout_marginLeft="7dp"
+                        android:layout_width="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_height="25dp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/subsribecoinID"
+                        android:layout_centerVertical="true"
+                        android:textSize="25sp"
+                        android:layout_marginLeft="10sp"
+                        android:text="0.0"
+                        android:layout_toRightOf="@+id/coin"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:textColor="@android:color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/sss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <Button
+                    android:id="@+id/button_start_pause"
+                    android:layout_width="200dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textSize="17sp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/subcribes_button"
+                    android:text="Start earn 3+" />
+                <Button
+                    android:id="@+id/button_reset"
+                    android:layout_width="200dp"
+                    android:textAllCaps="false"
+                    android:layout_height="wrap_content"
+                    android:text="Serbcribe Now"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:background="@drawable/subscribe"
+                    android:textSize="17sp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:visibility="visible"
+                    tools:visibility="visible" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/text_view_countdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="00:00"
+                android:textColor="@android:color/black"
+                android:textSize="60sp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ChatActicity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ChatToolbarID"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ProfileChatImageID"
+                android:layout_width="30dp"
+                android:elevation="1dp"
+                android:src="@drawable/defaultprofileimage"
+                android:layout_height="30dp">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:id="@+id/ChatUsernameID"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_toRightOf="@id/ProfileChatImageID"
+                android:layout_width="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="18dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ChatViewID"
+        android:layout_below="@+id/ChatToolbarID"
+        android:layout_above="@+id/ButtonLayoutIDs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/ButtonLayoutIDs"
+        android:elevation="2dp"
+        android:background="#FAFAFA"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <EditText
+            android:id="@+id/MessageInputID"
+            android:padding="7dp"
+            android:layout_centerVertical="true"
+            android:hint="Enter Message"
+            android:singleLine="true"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="17dp"
+            android:inputType="text"
+            android:textColor="#000"
+            android:background="@drawable/message_design"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+
+        <RelativeLayout
+            android:id="@+id/SendButtonID"
+            android:background="@drawable/send_buttondesign"
+            android:layout_width="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:elevation="1.5dp"
+            android:layout_centerVertical="true"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="25dp"
+                android:src="@drawable/send_button"
+                android:layout_height="25dp">
+
+            </ImageView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1070033884078",
+    "firebase_url": "https://tmc-mobile-wallet.firebaseio.com",
+    "project_id": "tmc-mobile-wallet",
+    "storage_bucket": "tmc-mobile-wallet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070033884078:android:3e72b58f06847ea1f9ae3f",
+        "android_client_info": {
+          "package_name": "com.tmc.tmcmobilewallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1070033884078-jj8scui8kiv00nbndv8lm2cehmjgthpn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tmc.tmcmobilewallet",
+            "certificate_hash": "bd9f00a877f6f008739a94e08debbaa2bad7ee92"
+          }
+        },
+        {
+          "client_id": "1070033884078-58qo9bth4rrm4ogmgltjtd2v9p6mb9jc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkFGD3WZXdzAhfeMlaeTHrGej1UIwPzfY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1070033884078-58qo9bth4rrm4ogmgltjtd2v9p6mb9jc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

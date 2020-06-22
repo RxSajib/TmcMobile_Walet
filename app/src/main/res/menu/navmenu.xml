@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/CashID"
+        android:title="Cash"
+        android:icon="@drawable/cashicon"
+        ></item>
+
+    <item
+        android:id="@+id/ReferID"
+        android:title="Refer"
+        android:icon="@drawable/shareicon"
+        ></item>
+
+    <item
+        android:id="@+id/RewardID"
+        android:title="Rewards"
+        android:icon="@drawable/rewardsicon"
+        ></item>
+
+    <item
+        android:id="@+id/LogoutID"
+        android:title="LogOut"
+        android:icon="@drawable/logouticon"
+        ></item>
+
+
+</menu>

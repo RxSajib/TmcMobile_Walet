@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".EarnMoneyActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/EarnMoneyToolbarID"
+        app:titleTextColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:text="Earn Money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_below="@+id/EarnMoneyToolbarID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/CounterTextID"
+            android:textSize="22dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="You Click 0 Times"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/EarnButtonID"
+                android:elevation="1dp"
+                android:background="@drawable/getnow_button"
+
+                android:layout_width="120dp"
+                android:layout_height="120dp">
+
+                <RelativeLayout
+                    android:background="@drawable/earnmonyriple"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp">
+
+                    <RelativeLayout
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/getbuttonID"
+                            android:src="@drawable/coin"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp">
+                        </ImageView>
+
+                        <TextView
+                            android:layout_below="@+id/getbuttonID"
+                            android:layout_marginTop="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="wrap_content"
+                            android:textColor="@android:color/white"
+                            android:text="Get Now"
+                            android:textSize="17dp"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:layout_height="wrap_content">
+                        </TextView>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/earninfo_design"
+            android:layout_width="match_parent"
+            android:elevation="1dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="14dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Click on the Coincay logo and get\n1 coin for each 60 clicks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+            <RelativeLayout
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/coin"
+                        android:src="@drawable/coin"
+                        android:layout_width="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_height="25dp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/countercointext"
+                        android:layout_centerVertical="true"
+                        android:textSize="25sp"
+                        android:layout_marginLeft="10sp"
+                        android:text="0.0"
+                        android:layout_toRightOf="@+id/coin"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context=".ProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ProfileToolbarID"
+        app:titleTextColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_below="@id/ProfileToolbarID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/SubmitButtonID"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Submit"
+            android:layout_marginBottom="15dp"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="140dp"
+            android:background="@drawable/proifle_sibmit_design"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+            <RelativeLayout
+                android:id="@+id/Photolayout"
+                android:layout_centerHorizontal="true"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:text="Photo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:elevation="0.7dp"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ProfileImageID"
+                    android:layout_width="100dp"
+                    android:elevation="0.5dp"
+                    android:src="@drawable/default_image_design"
+                    android:layout_height="100dp">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+            </RelativeLayout>
+
+
+
+        <EditText
+            android:id="@+id/FullnameID"
+            android:padding="12dp"
+            android:layout_below="@+id/Photolayout"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:drawableLeft="@drawable/prosonicon"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/profile_edittext_design"
+            android:hint="Enter FullName"
+            android:textColor="@android:color/black"
+            android:textColorHint="#7A7A7A"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:inputType="text"
+            android:layout_height="wrap_content">
+        </EditText>
+
+
+          <EditText
+            android:id="@+id/MobileNumber"
+            android:padding="12dp"
+            android:layout_below="@+id/FullnameID"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+              android:singleLine="true"
+              android:inputType="number"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/profile_edittext_design"
+            android:hint="Enter Number"
+            android:textColor="@android:color/black"
+            android:textColorHint="#7A7A7A"
+              android:drawableLeft="@drawable/phoneicon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+
+        <EditText
+            android:id="@+id/LocationID"
+            android:padding="12dp"
+            android:layout_below="@+id/MobileNumber"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/locationicon"
+            android:inputType="text"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/profile_edittext_design"
+            android:hint="Enter Location"
+            android:textColor="@android:color/black"
+            android:textColorHint="#7A7A7A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

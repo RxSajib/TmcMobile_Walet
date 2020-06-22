@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".VideoActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/VideoToolbarID"
+        app:titleTextColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:text="Watch Video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/VideoToolbarID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/sss"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageID"
+                android:src="@drawable/money"
+                android:layout_centerHorizontal="true"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+            </ImageView>
+
+            <RelativeLayout
+                android:id="@+id/ss"
+                android:layout_below="@+id/imageID"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/LointextID"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textSize="25dp"
+                    android:text="You Get"
+                    android:textColor="#686868"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+
+                <ImageView
+                    android:layout_toRightOf="@+id/LointextID"
+                    android:id="@+id/coin"
+                    android:src="@drawable/coincolour"
+                    android:layout_marginLeft="7dp"
+                    android:layout_width="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="25dp">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/cxountercointext"
+                    android:layout_centerVertical="true"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="10sp"
+                    android:text="0.0"
+                    android:layout_toRightOf="@+id/coin"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_below="@+id/sss"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/Ssd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/VideoOne"
+                    android:layout_width="100dp"
+                    android:layout_marginRight="10dp"
+                    android:elevation="1dp"
+                    android:background="@drawable/video_backgroud"
+                    android:layout_height="100dp">
+
+                    <RelativeLayout
+                        android:background="@drawable/video_ripple"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+                        <ImageView
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/playicon"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp">
+
+                        </ImageView>
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                 <RelativeLayout
+                    android:id="@+id/VideoTwo"
+                     android:layout_toRightOf="@+id/VideoOne"
+                    android:layout_width="100dp"
+                     android:layout_marginLeft="10dp"
+                    android:elevation="1dp"
+                    android:background="@drawable/video_backgroud"
+                    android:layout_height="100dp">
+
+                     <RelativeLayout
+                         android:background="@drawable/video_ripple"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent">
+                         <ImageView
+                             android:layout_centerHorizontal="true"
+                             android:layout_centerVertical="true"
+                             android:src="@drawable/playicon"
+                             android:layout_width="50dp"
+                             android:layout_height="50dp">
+
+                         </ImageView>
+                     </RelativeLayout>
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/sdfd"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/Ssd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/VideoThree"
+                    android:layout_width="100dp"
+                    android:layout_marginRight="10dp"
+                    android:elevation="1dp"
+                    android:background="@drawable/video_backgroud"
+                    android:layout_height="100dp">
+                   <RelativeLayout
+                       android:background="@drawable/video_ripple"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent">
+
+                       <ImageView
+                           android:layout_centerHorizontal="true"
+                           android:layout_centerVertical="true"
+                           android:src="@drawable/playicon"
+                           android:layout_width="50dp"
+                           android:layout_height="50dp">
+
+                       </ImageView>
+                   </RelativeLayout>
+
+                </RelativeLayout>
+
+                 <RelativeLayout
+                    android:id="@+id/VideoFoue"
+                     android:layout_toRightOf="@+id/VideoThree"
+                    android:layout_width="100dp"
+                     android:layout_marginLeft="10dp"
+                    android:elevation="1dp"
+                    android:background="@drawable/video_backgroud"
+                    android:layout_height="100dp">
+
+                    <RelativeLayout
+                        android:background="@drawable/video_ripple"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/playicon"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp">
+
+                        </ImageView>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/earninfo_design"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:elevation="1dp"
+            android:layout_height="100dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+                    <TextView
+                        android:id="@+id/ones"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@android:color/white"
+                        android:text="Watch these videos to get\n 4 coins par video, so easy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

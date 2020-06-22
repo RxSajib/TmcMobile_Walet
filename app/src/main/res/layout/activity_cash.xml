@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".CashActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/CashToolbarID"
+        android:layout_width="match_parent"
+        app:titleTextColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:text="Your Cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:elevation="1dp"
+        android:layout_below="@+id/CashToolbarID"
+        android:layout_margin="12dp"
+        android:background="@drawable/cash_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/earninfo_design"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:elevation="1dp"
+            android:layout_height="100dp">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/notesrex"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:textColor="@android:color/white"
+                        android:text="Notes"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/ones"
+                        android:layout_below="@id/notesrex"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="@android:color/white"
+                        android:text="* Minimum Reseem is 5000 Coins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/twos"
+                        android:layout_below="@id/ones"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="2dp"
+                        android:textColor="@android:color/white"
+                        android:text="* Your Redeem Amount in Your\nAccount in one Working day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+
+
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sss"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageID"
+                android:src="@drawable/money"
+                android:layout_centerHorizontal="true"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+            </ImageView>
+
+            <RelativeLayout
+                android:id="@+id/ss"
+                android:layout_below="@+id/imageID"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/LointextID"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textSize="25dp"
+                    android:text="You Get"
+                    android:textColor="#686868"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+
+                <ImageView
+                    android:layout_toRightOf="@+id/LointextID"
+                    android:id="@+id/coin"
+                    android:src="@drawable/coincolour"
+                    android:layout_marginLeft="7dp"
+                    android:layout_width="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="25dp">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/cxountercointext"
+                    android:layout_centerVertical="true"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="10sp"
+                    android:text="0.0"
+                    android:layout_toRightOf="@+id/coin"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/PaymentButtonID"
+            android:layout_below="@+id/sss"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/paymentmode_design"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textAllCaps="false"
+            android:textSize="17dp"
+            android:text="Select Your Payment Mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="6dp"
+    android:layout_height="50dp">
+
+    <TextView
+        android:id="@+id/SendMessageID"
+        android:background="@drawable/sendmessage_design"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/white"
+        android:text="hello how are you"
+        android:fontFamily="sans-serif-condensed"
+        android:elevation="1dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="100dp"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/ReciveMessageID"
+        android:background="@drawable/recivemessage_design"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="hello how are you"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="15sp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="100dp"
+        android:elevation="1dp"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+    </TextView>
+
+</RelativeLayout>

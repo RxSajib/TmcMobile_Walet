@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".AdminLoginActivity">
+
+
+    <TextView
+        android:id="@+id/aLointextID"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="22dp"
+        android:text="Admin Login To TMC"
+        android:textColor="#686868"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <TextView
+        android:id="@+id/Logngtrxt"
+        android:layout_below="@id/aLointextID"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_centerHorizontal="true"
+        android:text="Please login your TMC and continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imageID"
+        android:layout_below="@id/Logngtrxt"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/money"
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+    </ImageView>
+
+    <EditText
+        android:id="@+id/aEmailEdittextID"
+        android:layout_below="@+id/imageID"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:fontFamily="sans-serif-condensed"
+
+        android:layout_marginTop="15dp"
+        android:hint="Enter Email"
+        android:singleLine="true"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+
+    <EditText
+        android:id="@+id/aInputPasswordID"
+        android:layout_below="@+id/aEmailEdittextID"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:inputType="textPassword"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Enter Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+
+
+    <TextView
+        android:id="@+id/LfpasswordID"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/InputPasswordID"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="5dp"
+        android:text="Forget Password"
+        android:layout_height="wrap_content">
+
+
+    </TextView>
+
+    <Button
+        android:id="@+id/aLoginButton"
+        android:layout_above="@+id/ButtomLayoutID"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_marginBottom="15dp"
+        android:text="Login Admin Account"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@android:color/white"
+        android:background="@drawable/loginbutton_design"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+    <RelativeLayout
+        android:id="@+id/ButtomLayoutID"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="15dp"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/newacc"
+                android:text="Need New Account?"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_width="wrap_content"
+                android:textSize="17dp"
+                android:textColor="#009688"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/LogintextID"
+                android:layout_toRightOf="@id/newacc"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:visibility="gone"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="20dp"
+                android:textColor="#FF5722"
+                android:text="SingUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

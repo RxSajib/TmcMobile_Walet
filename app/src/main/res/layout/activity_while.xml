@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".WhileActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/SpinToolbarID"
+        app:titleTextColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:text="Coin Box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <RelativeLayout
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_toRightOf="@+id/LointextID"
+                    android:id="@+id/coin"
+                    android:src="@drawable/coin"
+                    android:layout_marginLeft="7dp"
+                    android:layout_width="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="20dp">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/subscribe"
+                    android:layout_centerVertical="true"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10sp"
+                    android:text="0.0"
+                    android:layout_toRightOf="@+id/coin"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_below="@+id/SpinToolbarID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:elevation="1dp"
+            android:layout_below="@+id/CashToolbarID"
+            android:layout_margin="12dp"
+            android:background="@drawable/cash_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/ads"
+                android:elevation="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-3947412102662378/7600067191">
+            </com.google.android.gms.ads.AdView>
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/jbd"
+                        android:background="@drawable/facebook_button_design"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:elevation="1dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp">
+
+                        <RelativeLayout
+                            android:background="@drawable/dailycheackout_ripple"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+                                android:id="@+id/facebooklogo"
+                                android:src="@drawable/facebooklogo"
+                                android:layout_width="60dp"
+                                android:layout_marginTop="10dp"
+                                android:elevation="1dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_height="60dp">
+                            </ImageView>
+
+                            <TextView
+                                android:layout_below="@+id/facebooklogo"
+                                android:fontFamily="sans-serif-condensed-medium"
+                                android:layout_width="wrap_content"
+                                android:textSize="20sp"
+                                android:layout_marginTop="5dp"
+                                android:textStyle="bold"
+                                android:text="Subscribe facebook page"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginBottom="4dp"
+                                android:textColor="@android:color/white"
+                                android:layout_height="wrap_content">
+                            </TextView>
+
+                            <TextView
+                                android:text="Get more coin"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginRight="8dp"
+                                android:background="@drawable/now_design"
+                                android:textColor="@android:color/white"
+                                android:layout_width="wrap_content"
+                                android:padding="5dp"
+                                android:elevation="1dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="sans-serif-condensed-medium"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                        </RelativeLayout>
+
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/VideoID"
+                        android:layout_below="@+id/jbd"
+                        android:background="@drawable/videodeisgn"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:elevation="1dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp">
+
+                        <RelativeLayout
+                            android:id="@+id/YoutubeButtonID"
+                            android:background="@drawable/dailyvideo_ripple"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+
+                                android:background="@drawable/dailycheackout_ripple"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                                <ImageView
+                                    android:id="@+id/you"
+                                    android:src="@drawable/youtubelogo"
+                                    android:layout_width="60dp"
+                                    android:layout_marginTop="10dp"
+                                    android:elevation="1dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_height="60dp">
+                                </ImageView>
+
+                                <TextView
+                                    android:layout_below="@+id/you"
+                                    android:fontFamily="sans-serif-condensed-medium"
+                                    android:layout_width="wrap_content"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:text="Subscribe youtube channel"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@android:color/white"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+
+                                <TextView
+                                    android:text="Get more coin"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@drawable/youtubedesign"
+                                    android:textColor="@android:color/white"
+                                    android:layout_width="wrap_content"
+                                    android:padding="5dp"
+                                    android:elevation="1dp"
+                                    android:fontFamily="sans-serif-condensed-medium"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:text="Get Now +10"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginRight="8dp"
+                                android:visibility="invisible"
+                                android:background="@drawable/vidoedesign"
+                                android:textColor="@android:color/white"
+                                android:layout_width="wrap_content"
+                                android:padding="5dp"
+                                android:elevation="1dp"
+                                android:fontFamily="sans-serif-condensed-medium"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/faceboktwo"
+                        android:layout_below="@id/VideoID"
+                        android:background="@drawable/facebook_button_design"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:elevation="1dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp">
+
+                        <RelativeLayout
+                            android:background="@drawable/dailycheackout_ripple"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+                                android:id="@+id/facebooklogo"
+                                android:src="@drawable/facebooklogo"
+                                android:layout_width="60dp"
+                                android:layout_marginTop="10dp"
+                                android:elevation="1dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_height="60dp">
+                            </ImageView>
+
+                            <TextView
+                                android:layout_below="@+id/facebooklogo"
+                                android:fontFamily="sans-serif-condensed-medium"
+                                android:layout_width="wrap_content"
+                                android:textSize="20sp"
+                                android:layout_marginTop="5dp"
+                                android:textStyle="bold"
+                                android:text="Subscribe facebook page"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginBottom="4dp"
+                                android:textColor="@android:color/white"
+                                android:layout_height="wrap_content">
+                            </TextView>
+
+                            <TextView
+                                android:text="Get more coin"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginRight="8dp"
+                                android:background="@drawable/now_design"
+                                android:textColor="@android:color/white"
+                                android:layout_width="wrap_content"
+                                android:padding="5dp"
+                                android:elevation="1dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="sans-serif-condensed-medium"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                        </RelativeLayout>
+
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/videotwo"
+                        android:layout_below="@+id/faceboktwo"
+                        android:background="@drawable/videodeisgn"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:elevation="1dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp">
+
+                        <RelativeLayout
+                            android:id="@+id/youtubetwo"
+                            android:background="@drawable/dailyvideo_ripple"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+
+                                android:background="@drawable/dailycheackout_ripple"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                                <ImageView
+                                    android:id="@+id/you"
+                                    android:src="@drawable/youtubelogo"
+                                    android:layout_width="60dp"
+                                    android:layout_marginTop="10dp"
+                                    android:elevation="1dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_height="60dp">
+                                </ImageView>
+
+                                <TextView
+                                    android:layout_below="@+id/you"
+                                    android:fontFamily="sans-serif-condensed-medium"
+                                    android:layout_width="wrap_content"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:text="Subscribe youtube channel"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@android:color/white"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+
+                                <TextView
+                                    android:text="Get more coin"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@drawable/youtubedesign"
+                                    android:textColor="@android:color/white"
+                                    android:layout_width="wrap_content"
+                                    android:padding="5dp"
+                                    android:elevation="1dp"
+                                    android:fontFamily="sans-serif-condensed-medium"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:text="Get Now +10"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginRight="8dp"
+                                android:visibility="invisible"
+                                android:background="@drawable/vidoedesign"
+                                android:textColor="@android:color/white"
+                                android:layout_width="wrap_content"
+                                android:padding="5dp"
+                                android:elevation="1dp"
+                                android:fontFamily="sans-serif-condensed-medium"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+
+            </ScrollView>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

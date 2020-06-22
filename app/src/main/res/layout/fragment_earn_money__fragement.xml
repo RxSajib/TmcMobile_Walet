@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".EarnMoney_Fragement">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/TablayoutID"
+            android:layout_margin="12dp"
+            android:background="@drawable/home_drawable"
+            android:elevation="1dp">
+
+
+
+
+            <com.google.android.gms.ads.NativeExpressAdView
+                android:elevation="1dp"
+                ads:adUnitId="ca-app-pub-3940256099942544/2247696110"
+                android:id="@+id/NativeAdviewID"
+                android:layout_above="@+id/AdtwoID"
+                android:layout_marginBottom="2dp"
+                ads:adSize="300x120"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.google.android.gms.ads.NativeExpressAdView>
+
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/AdtwoID"
+                android:elevation="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-3947412102662378/7600067191">
+            </com.google.android.gms.ads.AdView>
+
+
+
+            <LinearLayout
+                android:id="@+id/One"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+
+                <RelativeLayout
+                    android:id="@+id/VideoButtoID"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:elevation="1dp"
+                    android:background="@drawable/video_background">
+
+                    <RelativeLayout
+                        android:background="@drawable/watch_videoripple"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/video"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/video"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp">
+                            </ImageView>
+
+                            <TextView
+                                android:layout_below="@id/video"
+                                android:text="Watch Video"
+                                android:layout_centerHorizontal="true"
+                                android:textColor="@android:color/black"
+                                android:layout_marginTop="5dp"
+                                android:textSize="18sp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/EarnMoneyButtonID"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="10dp"
+                    android:elevation="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/clickean">
+
+                    <RelativeLayout
+                        android:background="@drawable/watch_videoripple"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/earn"
+                                android:src="@drawable/earn"
+                                android:layout_width="70dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_height="70dp">
+                            </ImageView>
+
+                            <TextView
+                                android:layout_below="@id/earn"
+                                android:layout_centerHorizontal="true"
+                                android:text="Earn Money"
+                                android:textColor="@android:color/black"
+                                android:layout_marginTop="5dp"
+                                android:textSize="18sp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/TwoID"
+                android:layout_below="@+id/One"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:elevation="1dp"
+                    android:background="@drawable/snipping">
+
+                    <RelativeLayout
+                        android:id="@+id/SpinButtonID"
+                        android:background="@drawable/watch_videoripple"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/spine"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/spine"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp">
+                            </ImageView>
+
+                            <TextView
+                                android:layout_below="@id/spine"
+                                android:text="TMC ADVITISER "
+                                android:textColor="@android:color/black"
+                                android:layout_marginTop="5dp"
+                                android:layout_centerHorizontal="true"
+                                android:textSize="18sp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/Rewar"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="10dp"
+                    android:elevation="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/referance">
+
+
+                    <RelativeLayout
+                        android:background="@drawable/watch_videoripple"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/ew"
+                                android:src="@drawable/reward"
+                                android:layout_width="70dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_height="70dp">
+                            </ImageView>
+
+                            <TextView
+                                android:layout_below="@id/ew"
+                                android:layout_centerHorizontal="true"
+                                android:text="Reward"
+                                android:textColor="@android:color/black"
+                                android:layout_marginTop="5dp"
+                                android:textSize="18sp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_below="@+id/TwoID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/SubbuttonID"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="10dp"
+                    android:elevation="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/subscribe">
+
+                    <RelativeLayout
+                        android:background="@drawable/watch_videoripple"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/subs"
+                                android:src="@drawable/people"
+                                android:layout_width="70dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_height="70dp">
+                            </ImageView>
+
+                            <TextView
+                                android:layout_below="@id/subs"
+                                android:layout_centerHorizontal="true"
+                                android:text="Subsribe"
+                                android:textColor="@android:color/black"
+                                android:layout_marginTop="5dp"
+                                android:textSize="18sp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

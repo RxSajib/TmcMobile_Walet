@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    tools:context=".RoketActiity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/RokeToolbarID"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_toRightOf="@+id/LointextID"
+                    android:id="@+id/coin"
+                    android:src="@drawable/coin"
+                    android:layout_marginLeft="7dp"
+                    android:layout_width="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="20dp">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/roketcount"
+                    android:layout_centerVertical="true"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10sp"
+                    android:text="0.0"
+                    android:layout_toRightOf="@+id/coin"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <TextView
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:text="Roket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <RelativeLayout
+
+        android:layout_below="@id/RokeToolbarID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:elevation="1dp"
+            android:layout_below="@+id/CashToolbarID"
+            android:layout_margin="12dp"
+            android:background="@drawable/cash_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <ImageView
+                android:id="@+id/bkaslogo"
+                android:src="@drawable/roketlogo"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+            </ImageView>
+
+            <EditText
+                android:id="@+id/RoketIDEdittextID"
+                android:padding="12dp"
+                android:layout_below="@id/bkaslogo"
+                android:background="@drawable/payment_inputdesign"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="220dp"
+                android:hint="Roket ID"
+                android:inputType="number"
+                android:textSize="17dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/RoketCoin"
+                android:padding="12dp"
+                android:layout_below="@id/RoketIDEdittextID"
+                android:background="@drawable/payment_inputdesign"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="220dp"
+                android:hint="Enter Coins"
+                android:inputType="number"
+                android:textSize="17dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_height="wrap_content">
+            </EditText>
+
+            <Button
+                android:id="@+id/RoketBubmitID"
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textSize="17sp"
+                android:padding="12dp"
+                android:background="@drawable/paymentmode_design"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/RoketCoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </Button>
+
+
+            <RelativeLayout
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/earninfo_design"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:elevation="1dp"
+                android:layout_height="100dp">
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:id="@+id/notesrex"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:textColor="@android:color/white"
+                            android:text="Notes"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/ones"
+                            android:layout_below="@id/notesrex"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="14sp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textColor="@android:color/white"
+                            android:text="* Minimum Reseem is 5000 Coins"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/twos"
+                            android:layout_below="@id/ones"
+                            android:textSize="14sp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="2dp"
+                            android:textColor="@android:color/white"
+                            android:text="* Your Redeem Amount take 24hrs\n 5000 coins = 5$-15$ \n measure by country and time you earned"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </RelativeLayout>
+
+
+
+                </ScrollView>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

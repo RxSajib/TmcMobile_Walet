@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/user_back"
+    android:layout_margin="7dp"
+    android:elevation="1dp"
+    android:layout_height="80dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/SprofileimageID"
+            android:layout_width="60dp"
+            android:src="@drawable/user_design"
+            android:layout_marginLeft="10sp"
+            android:layout_centerVertical="true"
+            android:layout_height="60dp">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+
+        <RelativeLayout
+            android:layout_toRightOf="@+id/SprofileimageID"
+            android:layout_marginLeft="7dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Sfullname"
+                android:text="Mr Sajib Roy"
+                android:textSize="18dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_height="wrap_content">
+            </TextView>
+
+
+            <RelativeLayout
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/Sfullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/CoinID"
+                    android:src="@drawable/coincolour"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/UserCoinID"
+                    android:layout_toRightOf="@id/CoinID"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="0.0"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

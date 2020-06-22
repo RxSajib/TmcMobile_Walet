@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    tools:context=".RewardsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/RewardsToolbarID"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <TextView
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:text="Reward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <RelativeLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_toRightOf="@+id/LointextID"
+                android:id="@+id/coin"
+                android:src="@drawable/coin"
+                android:layout_marginLeft="7dp"
+                android:layout_width="20dp"
+                android:layout_centerVertical="true"
+                android:layout_height="20dp">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/bankcoins"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:layout_marginLeft="10sp"
+                android:text="0.0"
+                android:layout_toRightOf="@+id/coin"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_below="@+id/RewardsToolbarID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:elevation="1dp"
+            android:layout_below="@+id/CashToolbarID"
+            android:layout_margin="12dp"
+            android:background="@drawable/cash_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <RelativeLayout
+                android:id="@+id/jbd"
+                android:background="@drawable/dailycheackout_design"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:elevation="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <RelativeLayout
+                    android:background="@drawable/dailycheackout_ripple"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/checkout"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:layout_width="wrap_content"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            android:text="Daily Checkout"
+                            android:layout_marginBottom="4dp"
+                            android:textColor="@android:color/white"
+                            android:layout_height="wrap_content">
+                        </TextView>
+
+                        <TextView
+                            android:layout_below="@+id/checkout"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:layout_width="wrap_content"
+                            android:textSize="15sp"
+                            android:layout_marginTop="4dp"
+                            android:text="Checkout daily to get +15 coins"
+                            android:textColor="@android:color/white"
+                            android:layout_height="wrap_content">
+                        </TextView>
+
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:text="Get Now +15"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/now_design"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:padding="5dp"
+                        android:elevation="1dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/VideoID"
+                android:layout_below="@+id/jbd"
+                android:background="@drawable/videodeisgn"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:elevation="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <RelativeLayout
+                    android:background="@drawable/dailyvideo_ripple"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/checkout"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:layout_width="wrap_content"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            android:text="Watch Now"
+                            android:layout_marginBottom="4dp"
+                            android:textColor="@android:color/white"
+                            android:layout_height="wrap_content">
+                        </TextView>
+
+                        <TextView
+                            android:layout_below="@+id/checkout"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:layout_width="wrap_content"
+                            android:textSize="15sp"
+                            android:layout_marginTop="4dp"
+                            android:text="watch video to get +10 coins"
+                            android:textColor="@android:color/white"
+                            android:layout_height="wrap_content">
+                        </TextView>
+
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:text="Get Now +10"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/vidoedesign"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:padding="5dp"
+                        android:elevation="1dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/ads"
+                android:elevation="1dp"
+                android:layout_above="@+id/ssss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-3947412102662378/7600067191">
+            </com.google.android.gms.ads.AdView>
+
+
+
+            <RelativeLayout
+                android:id="@+id/ssss"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/earninfo_design"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:elevation="1dp"
+                android:layout_height="100dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+                        <TextView
+                            android:id="@+id/twos"
+                            android:textSize="16sp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@android:color/white"
+                            android:text="Just complecte some simple task\n and get coin, so easy and fast"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

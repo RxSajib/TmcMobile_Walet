@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/DrawerID"
+    tools:context=".HomeActivity"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/HomeToolbarID"
+            app:titleTextColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:text="TMC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <RelativeLayout
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_toRightOf="@+id/LointextID"
+                        android:id="@+id/coin"
+                        android:src="@drawable/coin"
+                        android:layout_marginLeft="7dp"
+                        android:layout_width="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_height="20dp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/myaccount"
+                        android:layout_centerVertical="true"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="10sp"
+                        android:text="0.0"
+                        android:layout_toRightOf="@+id/coin"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/TablayoutID"
+            app:tabTextColor="@android:color/white"
+            android:layout_below="@+id/HomeToolbarID"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.tabs.TabLayout>
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/ViewPagrID"
+            android:layout_below="@+id/TablayoutID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </androidx.viewpager.widget.ViewPager>
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navagationID"
+        android:layout_width="wrap_content"
+        android:layout_gravity="start"
+        app:menu="@menu/navmenu"
+        app:headerLayout="@layout/header_layout"
+        android:layout_height="match_parent">
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>
