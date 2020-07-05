@@ -258,16 +258,16 @@
 
 
                         <TextView
-                            android:id="@+id/twos"
-                            android:textSize="16sp"
-                            android:fontFamily="sans-serif-condensed"
-                            android:layout_centerVertical="true"
-                            android:layout_centerHorizontal="true"
-                            android:textColor="@android:color/white"
-                            android:text="Just complecte some simple task\n and get coin, so easy and fast"
+                            android:id="@+id/ones"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
-
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="sans-serif-condensed"
+                            android:layout_margin="5dp"
+                            android:text="@string/video_note"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp">
                         </TextView>
 
                     </RelativeLayout>

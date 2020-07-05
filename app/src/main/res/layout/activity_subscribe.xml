@@ -72,20 +72,17 @@
 
 
                         <TextView
-                            android:layout_marginTop="10dp"
                             android:id="@+id/ones"
-                            android:layout_marginLeft="10dp"
-                            android:textSize="14sp"
-                            android:fontFamily="sans-serif-condensed"
-                            android:textColor="@android:color/white"
-                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"
-                            android:text="Click on the subsribe button and get 5 coin just one click so easy and simple"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
+                            android:layout_centerVertical="true"
+                            android:fontFamily="sans-serif-condensed"
+                            android:layout_margin="5dp"
+                            android:text="@string/video_note"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp">
                         </TextView>
-
 
 
                     </RelativeLayout>

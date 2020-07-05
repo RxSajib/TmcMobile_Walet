@@ -9,22 +9,22 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/VideoToolbarID"
-        app:titleTextColor="@android:color/white"
-        android:background="@color/colorPrimary"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@android:color/white">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <TextView
-                android:fontFamily="sans-serif-condensed-medium"
-                android:textColor="@android:color/white"
-                android:textSize="20sp"
-                android:text="Watch Video"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Watch Video"
+                android:textColor="@android:color/white"
+                android:textSize="20sp">
 
             </TextView>
 
@@ -34,67 +34,65 @@
 
 
     <RelativeLayout
-        android:layout_below="@+id/VideoToolbarID"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_below="@+id/VideoToolbarID">
 
         <RelativeLayout
             android:id="@+id/sss"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
 
             <ImageView
                 android:id="@+id/imageID"
-                android:src="@drawable/money"
-                android:layout_centerHorizontal="true"
                 android:layout_width="100dp"
-                android:layout_height="100dp">
-            </ImageView>
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/money"></ImageView>
 
             <RelativeLayout
                 android:id="@+id/ss"
-                android:layout_below="@+id/imageID"
                 android:layout_width="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageID"
                 android:layout_centerHorizontal="true"
-                android:layout_height="wrap_content">
+                android:layout_marginTop="10dp">
 
 
                 <TextView
                     android:id="@+id/LointextID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed-medium"
-                    android:textSize="25dp"
                     android:text="You Get"
                     android:textColor="#686868"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                </TextView>
+                    android:textSize="25dp"></TextView>
 
 
                 <ImageView
-                    android:layout_toRightOf="@+id/LointextID"
                     android:id="@+id/coin"
-                    android:src="@drawable/coincolour"
-                    android:layout_marginLeft="7dp"
                     android:layout_width="25dp"
+                    android:layout_height="25dp"
                     android:layout_centerVertical="true"
-                    android:layout_height="25dp">
+                    android:layout_marginLeft="7dp"
+                    android:layout_toRightOf="@+id/LointextID"
+                    android:src="@drawable/coincolour">
 
                 </ImageView>
 
                 <TextView
                     android:id="@+id/cxountercointext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:textSize="25sp"
                     android:layout_marginLeft="10sp"
-                    android:text="0.0"
                     android:layout_toRightOf="@+id/coin"
                     android:fontFamily="sans-serif-condensed-medium"
+                    android:text="0.0"
                     android:textColor="@android:color/black"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:textSize="25sp">
 
                 </TextView>
 
@@ -102,20 +100,15 @@
             </RelativeLayout>
 
 
-
-
-
-
-
         </RelativeLayout>
 
 
         <RelativeLayout
-            android:layout_below="@+id/sss"
-            android:layout_marginTop="30dp"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sss"
             android:layout_centerHorizontal="true"
-            android:layout_height="wrap_content">
+            android:layout_marginTop="30dp">
 
             <RelativeLayout
                 android:id="@+id/Ssd"
@@ -124,54 +117,94 @@
 
                 <RelativeLayout
                     android:id="@+id/VideoOne"
-                    android:layout_width="100dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
                     android:layout_marginRight="10dp"
-                    android:elevation="1dp"
                     android:background="@drawable/video_backgroud"
-                    android:layout_height="100dp">
+                    android:elevation="1dp">
 
                     <RelativeLayout
-                        android:background="@drawable/video_ripple"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp">
-                        <ImageView
-                            android:layout_centerHorizontal="true"
-                            android:layout_centerVertical="true"
-                            android:src="@drawable/playicon"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp">
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/video_ripple">
 
-                        </ImageView>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true">
+
+                            <ImageView
+                                android:id="@+id/coinText"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/playicon"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/coinText"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3dp"
+                                android:text="2 Coin"
+                                android:textColor="@android:color/white">
+
+                            </TextView>
+
+                        </RelativeLayout>
+
+
                     </RelativeLayout>
 
 
                 </RelativeLayout>
 
-                 <RelativeLayout
+                <RelativeLayout
                     android:id="@+id/VideoTwo"
-                     android:layout_toRightOf="@+id/VideoOne"
-                    android:layout_width="100dp"
-                     android:layout_marginLeft="10dp"
-                    android:elevation="1dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/VideoOne"
                     android:background="@drawable/video_backgroud"
-                    android:layout_height="100dp">
+                    android:elevation="1dp">
 
-                     <RelativeLayout
-                         android:background="@drawable/video_ripple"
-                         android:layout_width="match_parent"
-                         android:layout_height="match_parent">
-                         <ImageView
-                             android:layout_centerHorizontal="true"
-                             android:layout_centerVertical="true"
-                             android:src="@drawable/playicon"
-                             android:layout_width="50dp"
-                             android:layout_height="50dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/video_ripple">
 
-                         </ImageView>
-                     </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true">
+
+                            <ImageView
+                                android:id="@+id/SoinText"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/playicon"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/SoinText"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3dp"
+                                android:text="3 Coin"
+                                android:textColor="@android:color/white">
+
+                            </TextView>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
 
                 </RelativeLayout>
-
 
 
             </RelativeLayout>
@@ -179,61 +212,98 @@
 
             <RelativeLayout
                 android:id="@+id/sdfd"
-                android:layout_marginTop="10dp"
-                android:layout_below="@+id/Ssd"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Ssd"
+                android:layout_marginTop="10dp">
 
                 <RelativeLayout
                     android:id="@+id/VideoThree"
-                    android:layout_width="100dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
                     android:layout_marginRight="10dp"
-                    android:elevation="1dp"
                     android:background="@drawable/video_backgroud"
-                    android:layout_height="100dp">
-                   <RelativeLayout
-                       android:background="@drawable/video_ripple"
-                       android:layout_width="match_parent"
-                       android:layout_height="match_parent">
-
-                       <ImageView
-                           android:layout_centerHorizontal="true"
-                           android:layout_centerVertical="true"
-                           android:src="@drawable/playicon"
-                           android:layout_width="50dp"
-                           android:layout_height="50dp">
-
-                       </ImageView>
-                   </RelativeLayout>
-
-                </RelativeLayout>
-
-                 <RelativeLayout
-                    android:id="@+id/VideoFoue"
-                     android:layout_toRightOf="@+id/VideoThree"
-                    android:layout_width="100dp"
-                     android:layout_marginLeft="10dp"
-                    android:elevation="1dp"
-                    android:background="@drawable/video_backgroud"
-                    android:layout_height="100dp">
+                    android:elevation="1dp">
 
                     <RelativeLayout
-                        android:background="@drawable/video_ripple"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:background="@drawable/video_ripple">
 
-                        <ImageView
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"
-                            android:layout_centerVertical="true"
-                            android:src="@drawable/playicon"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp">
+                            android:layout_centerVertical="true">
 
-                        </ImageView>
+                            <ImageView
+                                android:id="@+id/coinText"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/playicon"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/coinText"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3dp"
+                                android:text="4 Coin"
+                                android:textColor="@android:color/white">
+
+                            </TextView>
+
+                        </RelativeLayout>
+
                     </RelativeLayout>
 
                 </RelativeLayout>
 
+                <RelativeLayout
+                    android:id="@+id/VideoFoue"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/VideoThree"
+                    android:background="@drawable/video_backgroud"
+                    android:elevation="1dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/video_ripple">
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true">
+
+                            <ImageView
+                                android:id="@+id/ScoinText"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/playicon"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ScoinText"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3dp"
+                                android:text="5 Coin"
+                                android:textColor="@android:color/white">
+
+                            </TextView>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
 
 
             </RelativeLayout>
@@ -241,13 +311,13 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
             android:layout_alignParentBottom="true"
             android:layout_marginLeft="100dp"
-            android:background="@drawable/earninfo_design"
-            android:layout_width="match_parent"
             android:layout_marginBottom="5dp"
-            android:elevation="1dp"
-            android:layout_height="100dp">
+            android:background="@drawable/earninfo_design"
+            android:elevation="1dp">
 
 
             <RelativeLayout
@@ -259,24 +329,36 @@
                     android:layout_height="match_parent">
 
 
-
-                    <TextView
-                        android:id="@+id/ones"
-                        android:textSize="16sp"
-                        android:fontFamily="sans-serif-condensed"
-                        android:layout_centerVertical="true"
-                        android:layout_centerHorizontal="true"
-                        android:textColor="@android:color/white"
-                        android:text="Watch these videos to get\n 4 coins par video, so easy"
-                        android:layout_width="wrap_content"
+                    <ScrollView
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
-                    </TextView>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/ones"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_margin="5dp"
+                                android:text="@string/video_note"
+                                android:textColor="@android:color/white"
+                                android:textSize="12sp">
+                            </TextView>
+
+                        </RelativeLayout>
+
+                    </ScrollView>
+
 
 
 
                 </RelativeLayout>
-
 
 
             </RelativeLayout>

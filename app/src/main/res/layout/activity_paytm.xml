@@ -159,45 +159,16 @@
 
 
                         <TextView
-                            android:id="@+id/notesrex"
-                            android:layout_centerHorizontal="true"
-                            android:fontFamily="sans-serif-condensed-medium"
-                            android:textColor="@android:color/white"
-                            android:text="Notes"
-                            android:textAllCaps="false"
-                            android:textStyle="bold"
-                            android:textSize="20dp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
-                        </TextView>
-
-                        <TextView
-                            android:layout_marginTop="5dp"
                             android:id="@+id/ones"
-                            android:layout_below="@id/notesrex"
-                            android:layout_marginLeft="10dp"
-                            android:textSize="14sp"
-                            android:fontFamily="sans-serif-condensed"
-                            android:textColor="@android:color/white"
-                            android:text="* Minimum Reseem is 5000 Coins"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
-
-                        </TextView>
-
-                        <TextView
-                            android:id="@+id/twos"
-                            android:layout_below="@id/ones"
-                            android:textSize="14sp"
-                            android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
                             android:fontFamily="sans-serif-condensed"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginBottom="2dp"
+                            android:layout_margin="5dp"
+                            android:text="@string/video_note"
                             android:textColor="@android:color/white"
-                            android:text="* Your Redeem Amount take 24hrs\n 5000 coins = 5$-15$ \n measure by country and time you earned"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
-
+                            android:textSize="12sp">
                         </TextView>
 
                     </RelativeLayout>
